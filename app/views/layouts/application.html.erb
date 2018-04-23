@@ -8,7 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body
+    <p>
+      <%= link_to "Sign Up", users_new_path %>
+    </p>
+    <!-- <a href="/users/new">Sign Up</a> -->
     <%= yield %>
   </body>
 </html>
